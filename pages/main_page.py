@@ -10,7 +10,8 @@ class MainPage:
         browser.element('.HeaderMenu-link--sign-in').click()
 
     def click_on_sign_in_mobile(self):
-        browser.element('d-inline-block d-lg-none flex-order-1').click()
+        browser.element('.Button-label').click()
+        browser.element('.HeaderMenu-link--sign-in').click()
 
     def assert_text_sign_in(self):
         browser.element('.auth-form-header').should(have.text('Sign in to GitHub'))
